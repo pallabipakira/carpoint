@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental</title>
+   
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+     <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- Left Section -->
+        <div class="col-6 left-section text-center">
+          <div class="logo">
+            <img src="./assets/CarPoint-White Logo 3.png" alt="" />
+          </div>
+          <img
+            src="./assets/white-car.png"
+            class="img-fluid mt-4"
+            alt="Car Image"
+          />
+        </div>
+
+        <!-- Right Section -->
+        <div class="col-6 right-section">
+          <h5 class="mb-1">Hi, Welcome <span>👋</span></h5>
+          <h2 class="fw-bold">Login</h2>
+          <p class="text-muted">
+            Lorem ipsum dolor sit amet consectetur volutpat eu.
+          </p>
+          <button class="google-btn">
+            <img src="https://img.icons8.com/color/16/google-logo.png" /> Login
+            with Google
+          </button>
+
+          <div class="d-flex align-items-center mb-3">
+            <div class="flex-grow-1 border-bottom"></div>
+            <span class="px-2 text-muted">or Login with Email</span>
+            <div class="flex-grow-1 border-bottom"></div>
+          </div>
+
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter Email Address"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="*************"
+              />
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="remember" />
+                <label class="form-check-label" for="remember"
+                  >Remember me</label
+                >
+              </div>
+              <a href="#" class="text-warning">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn btn-warning">Login</button>
+
+            <p class="text-center mt-3">
+              Don’t have an account?
+              <a href="#" class="text-warning fw-bold">Sign Up</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

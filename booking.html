@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="./css/booking.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header-section">
+      <div class="container">
+        <nav>
+          <div class="nav-logo">
+            <a href=""><img src="./assets/Car point 1.png" alt="" /></a>
+          </div>
+          <label for="dash" class="icon"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
+          <div class="nav-right">
+            <ul>
+              <li class="list">
+                <a href="./about.html">About</a>
+              </li>
+              <li class="list"><a href="./booking.html">Booking</a></li>
+              <li class="list">
+                <a href="./how-its-work.html">How Its Work</a>
+              </li>
+              <li class="list"><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div class="header-btn">
+              <a class="header-btn1" href="./login.html">Login</a>
+              <a class="header-btn2" href="./sign-up.html">Signup</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="banner-cont">
+              <h1>Your Dream Car<br /><span>Wating Just For You </span></h1>
+            </div>
+          </div>
+          <div class="newsletter-box">
+            <div class="row">
+              <div>
+                <h2>Location</h2>
+                <p>
+                  <img src="./assets/mdi_locations.png" alt="" />Deshapriya
+                  Park, Kolkata
+                </p>
+              </div>
+              <div>
+                <h2>Pick -Up Date</h2>
+                <p>
+                  <img src="./assets/Group.png" alt="" />14 SEP'24,15:00 Mon
+                </p>
+              </div>
+              <div>
+                <h2>Retrun</h2>
+                <p><img src="./assets/Group.png" alt="" />18SEP'24,16:00 Fri</p>
+              </div>
+              <div>
+                <h2>Car Brand</h2>
+                <p><img src="./assets/Vector.png" alt="" />Any</p>
+              </div>
+              <div class="btn">
+                <a href="">Search <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Main Section -->
+    <section style="margin-top: 75px">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <!-- Side Section -->
+            <aside>
+              <div class="hamburger" onclick="toggleSidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="filter-sidebar" id="sidebar">
+                <div class="filter-header">
+                  <h2>Filter</h2>
+                  <span class="clear-all" onclick="clearAllFilters()"
+                    >Clear All</span
+                  >
+                </div>
+
+                <div class="filter-section">
+                  <h3>Kilometres Plan</h3>
+                  <div class="filter-options1">
+                    <button class="filter-btn active">140 Kms</button>
+                    <button class="filter-btn">280 Kms</button>
+                    <button class="filter-btn">340 Kms</button>
+                    <button class="filter-btn">480 Kms</button>
+                  </div>
+                  <p class="section-title">Segment</p>
+                  <div class="filter-options">
+                    <label class="checkbox-label"
+                      ><input type="checkbox" /> All</label
+                    >
+                    <label class="checkbox-label"
+                      ><input type="checkbox" /> SUV</label
+                    >
+                    <label class="checkbox-label"
+                      ><input type="checkbox" /> Sedean</label
+                    >
+                    <label class="checkbox-label"
+                      ><input type="checkbox" /> MUV</label
+                    >
+                    <label class="checkbox-label"
+                      ><input type="checkbox" /> Hatch Back</label
+                    >
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="filter-section">
+                  <p class="section-title">Brand</p>
+                  <div class="filter-options">
+                    <label class="checkbox-label"
+                      ><input type="checkbox" /> All</label
+                    >
+                    <label class="checkbox-label"
+                      ><input type="checkbox" /> Mahindra</label
+                    >
+                    <label class="checkbox-label"
+                      ><input type="checkbox" /> TATA</label
+                    >
+                    <label class="checkbox-label"
+                      ><input type="checkbox" /> Hyundai</label
+                    >
+                    <label class="checkbox-label"
+                      ><input type="checkbox" /> Honda</label
+                    >
+                    <label class="checkbox-label"
+                      ><input type="checkbox" /> Nissan</label
+                    >
+                    <label class="checkbox-label"
+                      ><input type="checkbox" /> Ford</label
+                    >
+                    <label class="checkbox-label"
+                      ><input type="checkbox" /> Land Rover</label
+                    >
+                  </div>
+                  <p class="more-brands">+12 more</p>
+                </div>
+
+                <hr />
+
+                <div class="filter-section">
+                  <p class="section-title">Capacity</p>
+                  <div class="filter-options">
+                    <label class="checkbox-label"
+                      ><input type="checkbox" /> 2 Person</label
+                    >
+                    <label class="checkbox-label"
+                      ><input type="checkbox" /> 4 person</label
+                    >
+                    <label class="checkbox-label"
+                      ><input type="checkbox" /> 6 Person</label
+                    >
+                    <label class="checkbox-label"
+                      ><input type="checkbox" /> 8 Person & More</label
+                    >
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="filter-section price-range">
+                  <p class="section-title">Price</p>
+                  <input
+                    type="range"
+                    min="1000"
+                    max="100000"
+                    value="50000"
+                    id="priceSlider"
+                  />
+                  <div class="price-labels">
+                    <span>Min: 1000</span>
+                    <span id="priceValue">Max: 50000</span>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <!-- Card Section -->
+          <div class="col-10">
+            <div style="margin-top: 50px">
+              <div class="heading">
+                <p>35 Car available for rent in Deshapriya Park Kolkata</p>
+                <div class="sort-wrapper">
+                  <div class="sort-container" onclick="toggleSort()">
+                    <span class="sort-text">Sort by</span>
+                    <div class="sort-icon">
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                    </div>
+                  </div>
+                  <div class="sort-dropdown" id="sortDropdown">
+                    <div>Price: Low to High</div>
+                    <div>Price: High to Low</div>
+                    <div>Newest</div>
+                  </div>
+                </div>
+              </div>
+              <div class="cars-wrapper" id="cars-container">
+                <div class="car-card">
+                  <div class="card-header">
+                    <h3>Hyundai SUV</h3>
+                    <i class="fas fa-heart" id="fav-icon"></i>
+                  </div>
+                  <div class="status">
+                    <img src="./assets/green.png" alt="" />
+                    Available
+                  </div>
+                  <div class="car-img">
+                    <img src="./assets/1st.png" alt="Car" />
+                  </div>
+                  <div class="features">
+                    <div>
+                      <img src="./assets/gas-station.png" alt="" /> Diesel
+                    </div>
+                    <div>
+                      <img src="./assets/circle.png" alt="" /> Automatic
+                    </div>
+                    <div>
+                      <img src="./assets/profile-2user.png" alt="" /> 7 People
+                    </div>
+                    <div>
+                      <img src="./assets/insurance.png" alt="" />Insurance
+                      Included
+                    </div>
+                    <div>
+                      <img src="./assets/speed.png" alt="" /> 250 Km/Day
+                    </div>
+                  </div>
+                  <div class="price-book">
+                    <div class="price">
+                      ₹4800
+                      <span style="font-weight: normal; font-size: 0.9rem"
+                        >/ Day</span
+                      >
+                    </div>
+                    <button>
+                      <a style="color: white" href="./carpoint_booking.html"
+                        >Book Now</a
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div class="car-card">
+                  <div class="card-header">
+                    <h3>Maruti Suzuki Dzire</h3>
+                    <i class="fas fa-heart" id="fav-icon"></i>
+                  </div>
+                  <div class="status">
+                    <img src="./assets/green.png" alt="" />
+                    Available
+                  </div>
+                  <div class="car-img">
+                    <img src="./assets/2nd.png" alt="Car" />
+                  </div>
+                  <div class="features">
+                    <div>
+                      <img src="./assets/gas-station.png" alt="" /> Diesel
+                    </div>
+                    <div>
+                      <img src="./assets/circle.png" alt="" /> Automatic
+                    </div>
+                    <div>
+                      <img src="./assets/profile-2user.png" alt="" /> 7 People
+                    </div>
+                    <div>
+                      <img src="./assets/insurance.png" alt="" />Insurance
+                      Included
+                    </div>
+                    <div>
+                      <img src="./assets/speed.png" alt="" /> 250 Km/Day
+                    </div>
+                  </div>
+                  <div class="price-book">
+                    <div class="price">
+                      ₹3200
+                      <span style="font-weight: normal; font-size: 0.9rem"
+                        >/ Day</span
+                      >
+                    </div>
+                    <button>
+                      <a style="color: white" href="./carpoint_booking.html"
+                        >Book Now</a
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div class="car-card">
+                  <div class="card-header">
+                    <h3>Range Rover</h3>
+                    <i class="fas fa-heart" id="fav-icon"></i>
+                  </div>
+                  <div class="status">
+                    <img src="./assets/green.png" alt="" />
+                    Available
+                  </div>
+                  <div class="car-img">
+                    <img src="./assets/3rd.png" alt="Car" />
+                  </div>
+                  <div class="features">
+                    <div>
+                      <img src="./assets/gas-station.png" alt="" /> Diesel
+                    </div>
+                    <div>
+                      <img src="./assets/circle.png" alt="" /> Automatic
+                    </div>
+                    <div>
+                      <img src="./assets/profile-2user.png" alt="" /> 7 People
+                    </div>
+                    <div>
+                      <img src="./assets/insurance.png" alt="" />Insurance
+                      Included
+                    </div>
+                    <div>
+                      <img src="./assets/speed.png" alt="" /> 250 Km/Day
+                    </div>
+                  </div>
+                  <div class="price-book">
+                    <div class="price">
+                      ₹6500
+                      <span style="font-weight: normal; font-size: 0.9rem"
+                        >/ Day</span
+                      >
+                    </div>
+                    <button>
+                      <a style="color: white" href="./carpoint_booking.html"
+                        >Book Now</a
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div class="car-card">
+                  <div class="card-header">
+                    <h3>Mahindra Xylo</h3>
+                    <i class="fas fa-heart" id="fav-icon"></i>
+                  </div>
+                  <div class="status">
+                    <img src="./assets/green.png" alt="" />
+                    Available
+                  </div>
+                  <div class="car-img">
+                    <img src="./assets/4th.png" alt="Car" />
+                  </div>
+                  <div class="features">
+                    <div>
+                      <img src="./assets/gas-station.png" alt="" /> Diesel
+                    </div>
+                    <div>
+                      <img src="./assets/circle.png" alt="" /> Automatic
+                    </div>
+                    <div>
+                      <img src="./assets/profile-2user.png" alt="" /> 7 People
+                    </div>
+                    <div>
+                      <img src="./assets/insurance.png" alt="" />Insurance
+                      Included
+                    </div>
+                    <div>
+                      <img src="./assets/speed.png" alt="" /> 250 Km/Day
+                    </div>
+                  </div>
+                  <div class="price-book">
+                    <div class="price">
+                      ₹4800
+                      <span style="font-weight: normal; font-size: 0.9rem"
+                        >/ Day</span
+                      >
+                    </div>
+                    <button>
+                      <a style="color: white" href="./carpoint_booking.html"
+                        >Book Now</a
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div class="car-card">
+                  <div class="card-header">
+                    <h3>Mahindra XUV 3XO</h3>
+                    <i class="fas fa-heart" id="fav-icon"></i>
+                  </div>
+                  <div class="status">
+                    <img src="./assets/green.png" alt="" />
+                    Available
+                  </div>
+                  <div class="car-img">
+                    <img src="./assets/5th.png" alt="Car" />
+                  </div>
+                  <div class="features">
+                    <div>
+                      <img src="./assets/gas-station.png" alt="" /> Diesel
+                    </div>
+                    <div>
+                      <img src="./assets/circle.png" alt="" /> Automatic
+                    </div>
+                    <div>
+                      <img src="./assets/profile-2user.png" alt="" /> 7 People
+                    </div>
+                    <div>
+                      <img src="./assets/insurance.png" alt="" />Insurance
+                      Included
+                    </div>
+                    <div>
+                      <img src="./assets/speed.png" alt="" /> 250 Km/Day
+                    </div>
+                  </div>
+                  <div class="price-book">
+                    <div class="price">
+                      ₹3200
+                      <span style="font-weight: normal; font-size: 0.9rem"
+                        >/ Day</span
+                      >
+                    </div>
+                    <button>
+                      <a style="color: white" href="./carpoint_booking.html"
+                        >Book Now</a
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div class="car-card">
+                  <div class="card-header">
+                    <h3>Nissan Datsun GO+</h3>
+                    <i class="fas fa-heart" id="fav-icon"></i>
+                  </div>
+                  <div class="status">
+                    <img src="./assets/green.png" alt="" />
+                    Available
+                  </div>
+                  <div class="car-img">
+                    <img src="./assets/6th.png" alt="Car" />
+                  </div>
+                  <div class="features">
+                    <div>
+                      <img src="./assets/gas-station.png" alt="" /> Diesel
+                    </div>
+                    <div>
+                      <img src="./assets/circle.png" alt="" /> Automatic
+                    </div>
+                    <div>
+                      <img src="./assets/profile-2user.png" alt="" /> 7 People
+                    </div>
+                    <div>
+                      <img src="./assets/insurance.png" alt="" />Insurance
+                      Included
+                    </div>
+                    <div>
+                      <img src="./assets/speed.png" alt="" /> 250 Km/Day
+                    </div>
+                  </div>
+                  <div class="price-book">
+                    <div class="price">
+                      ₹6500
+                      <span style="font-weight: normal; font-size: 0.9rem"
+                        >/ Day</span
+                      >
+                    </div>
+                    <button>
+                      <a style="color: white" href="./carpoint_booking.html"
+                        >Book Now</a
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div class="car-card">
+                  <div class="card-header">
+                    <h3>Ford Focus</h3>
+                    <i class="fas fa-heart" id="fav-icon"></i>
+                  </div>
+                  <div class="status">
+                    <img src="./assets/green.png" alt="" />
+                    Available
+                  </div>
+                  <div class="car-img">
+                    <img src="./assets/7th.png" alt="Car" />
+                  </div>
+                  <div class="features">
+                    <div>
+                      <img src="./assets/gas-station.png" alt="" /> Diesel
+                    </div>
+                    <div>
+                      <img src="./assets/circle.png" alt="" /> Automatic
+                    </div>
+                    <div>
+                      <img src="./assets/profile-2user.png" alt="" /> 7 People
+                    </div>
+                    <div>
+                      <img src="./assets/insurance.png" alt="" />Insurance
+                      Included
+                    </div>
+                    <div>
+                      <img src="./assets/speed.png" alt="" /> 250 Km/Day
+                    </div>
+                  </div>
+                  <div class="price-book">
+                    <div class="price">
+                      ₹4800
+                      <span style="font-weight: normal; font-size: 0.9rem"
+                        >/ Day</span
+                      >
+                    </div>
+                    <button>
+                      <a style="color: white" href="./carpoint_booking.html"
+                        >Book Now</a
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div class="car-card">
+                  <div class="card-header">
+                    <h3>TATA Nexon</h3>
+                    <i class="fas fa-heart" id="fav-icon"></i>
+                  </div>
+                  <div class="status">
+                    <img src="./assets/green.png" alt="" />
+                    Available
+                  </div>
+                  <div class="car-img">
+                    <img src="./assets/8th.png" alt="Car" />
+                  </div>
+                  <div class="features">
+                    <div>
+                      <img src="./assets/gas-station.png" alt="" /> Diesel
+                    </div>
+                    <div>
+                      <img src="./assets/circle.png" alt="" /> Automatic
+                    </div>
+                    <div>
+                      <img src="./assets/profile-2user.png" alt="" /> 7 People
+                    </div>
+                    <div>
+                      <img src="./assets/insurance.png" alt="" />Insurance
+                      Included
+                    </div>
+                    <div>
+                      <img src="./assets/speed.png" alt="" /> 250 Km/Day
+                    </div>
+                  </div>
+                  <div class="price-book">
+                    <div class="price">
+                      ₹3200
+                      <span style="font-weight: normal; font-size: 0.9rem"
+                        >/ Day</span
+                      >
+                    </div>
+                    <button>
+                      <a style="color: white" href="./carpoint_booking.html"
+                        >Book Now</a
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div class="car-card">
+                  <div class="card-header">
+                    <h3>Suzuki Ertiga</h3>
+                    <i class="fas fa-heart" id="fav-icon"></i>
+                  </div>
+                  <div class="status">
+                    <img src="./assets/green.png" alt="" />
+                    Available
+                  </div>
+                  <div class="car-img">
+                    <img src="./assets/9th.png" alt="Car" />
+                  </div>
+                  <div class="features">
+                    <div>
+                      <img src="./assets/gas-station.png" alt="" /> Diesel
+                    </div>
+                    <div>
+                      <img src="./assets/circle.png" alt="" /> Automatic
+                    </div>
+                    <div>
+                      <img src="./assets/profile-2user.png" alt="" /> 7 People
+                    </div>
+                    <div>
+                      <img src="./assets/insurance.png" alt="" />Insurance
+                      Included
+                    </div>
+                    <div>
+                      <img src="./assets/speed.png" alt="" /> 250 Km/Day
+                    </div>
+                  </div>
+                  <div class="price-book">
+                    <div class="price">
+                      ₹6500
+                      <span style="font-weight: normal; font-size: 0.9rem"
+                        >/ Day</span
+                      >
+                    </div>
+                    <button>
+                      <a style="color: white" href="./carpoint_booking.html"
+                        >Book Now</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <button onclick="changePage(1)" class="active">1</button>
+          <button onclick="changePage(2)">2</button>
+        </div>
+      </div>
+    </section>
+    <!-- Blank Section -->
+    <section class="blank-section">
+      <div class="container">
+        <div class="footer-flote">
+          <p>Questions? Get in Touch</p>
+          <div class="footer-box-section">
+            <div class="footer-form">
+              <div class="footer-box-text">
+                <input type="text" placeholder="Your Name*" />
+              </div>
+              <div class="footer-box-email">
+                <input type="email" placeholder="Your Email*" />
+              </div>
+              <div class="footer-box-textarea">
+                <textarea name="" id="" placeholder="Your  Message"></textarea>
+              </div>
+              <div class="form-btn"><a href="">Send A Message</a></div>
+            </div>
+            <div class="form-side">
+              <div class="form-side-up">
+                <div class="form-side-p">
+                  <p>Download <br />App for free</p>
+                  <div class="form-side-icon">
+                    <img src="./assets/Car point 1.png" alt="" />
+                  </div>
+                </div>
+                <p>For easier, booking & easy deals</p>
+                <div class="form-pay">
+                  <img src="./assets/app store.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-pay1">
+            <img src="./assets/black 1.png" alt="" />
+          </div>
+          <div class="fotter-last-img">
+            <img src="./assets/all-car 1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="footer1">
+              <div class="footer-icon">
+                <img src="./assets/nav-logo.png" alt="" />
+              </div>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                <br />typesetting industry. Lorem Ipsum has been the industry's
+                <br />standard dummy text
+              </p>
+              <div class="footer-logos">
+                <div class="fotter-logo">
+                  <img src="./assets/ic_baseline-facebook.png" alt="" />
+                </div>
+                <div class="fotter-logo">
+                  <img src="./assets/mdi_instagram.png" alt="" />
+                </div>
+                <div class="fotter-logo">
+                  <img src="./assets/prime_twitter.png" alt="" />
+                </div>
+                <div class="fotter-logo">
+                  <img src="./assets/mdi_youtube.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <ul>
+              <li>
+                <b><a href="">Company</a></b>
+              </li>
+              <li><a href="">Home</a></li>
+              <li>
+                <a href="">About us</a>
+              </li>
+              <li><a href="">Booking</a></li>
+              <li><a href="">How Its Work</a></li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul>
+              <li>
+                <b><a href="">Help</a></b>
+              </li>
+              <li><a href="">Customer Support</a></li>
+              <li><a href="">Terms & Condition</a></li>
+              <li><a href="">Project</a></li>
+              <li>
+                <a href="">Careers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul>
+              <li style="margin-bottom: 15px">
+                <b>Subscribe To Newsletters</b>
+              </li>
+              <li class="footer-input" style="margin-bottom: 15px">
+                <input type="email" placeholder="Enter your email" />
+              </li>
+              <li><a class="footer-btn" href="">Subscribe </a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-last">
+          <img src="./assets/mdi_copyright.png" alt="" />
+          <p>2024 CarPoint All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- js -->
+    <script src="/js/index.js"></script>
+
+    <script>
+      const slider = document.getElementById("priceSlider");
+      const priceValue = document.getElementById("priceValue");
+      const sidebar = document.getElementById("sidebar");
+
+      slider.addEventListener("input", () => {
+        priceValue.textContent = `Max: ${slider.value}`;
+      });
+
+      document.querySelectorAll(".filter-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          button.classList.toggle("active");
+        });
+      });
+
+      function clearAllFilters() {
+        document
+          .querySelectorAll(".filter-btn.active")
+          .forEach((btn) => btn.classList.remove("active"));
+        document
+          .querySelectorAll(".checkbox-label input")
+          .forEach((cb) => (cb.checked = false));
+        slider.value = 50000;
+        priceValue.textContent = `Max: ${slider.value}`;
+        document.getElementById("sortSelect").selectedIndex = 0;
+      }
+
+      function toggleSidebar() {
+        sidebar.classList.toggle("show");
+      }
+
+      // like
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".fa-heart").forEach((icon) => {
+          icon.addEventListener("click", () => {
+            icon.classList.toggle("active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

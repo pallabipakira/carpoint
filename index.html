@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- GlideJS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/css/glide.core.min.css"
+    />
+    <!-- Splidejs CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style1.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header-section">
+      <div class="container">
+        <nav>
+          <div class="nav-logo">
+            <a href=""><img src="./assets/nav-logo.png" alt="" /></a>
+          </div>
+          <label for="dash" class="icon"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
+          <div class="nav-right">
+            <ul>
+              <li class="list">
+                <a href="./about.html">About</a>
+              </li>
+              <li class="list"><a href="./booking.html">Booking</a></li>
+              <li class="list">
+                <a href="./how-its-work.html">How Its Work</a>
+              </li>
+              <li class="list"><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div class="header-btn">
+              <a class="header-btn1" href="./login.html">Login</a>
+              <a class="header-btn2" href="./sign-up.html">Signup</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Banner Section -->
+    <section class="banner-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="banner-cont">
+              <h1>
+                Find, Book <span>And Rent</span><br /><span>A Car </span>Easily
+              </h1>
+              <p>
+                Get a car wherever and whenever you need it <br />with your iOS
+                AND Android device
+              </p>
+              <a href="">Explore Now</a>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="banner-img"><img src="./assets/Car.png" alt="" /></div>
+          </div>
+        </div>
+        <!-- Small Section -->
+
+        <div class="newsletter-box">
+          <div class="row">
+            <div>
+              <h2>Location</h2>
+              <p>
+                <img src="./assets/mdi_locations.png" alt="" />Choose a
+                locations
+              </p>
+            </div>
+            <div>
+              <h2>Pick -Up Date</h2>
+              <p><img src="./assets/Group.png" alt="" />Add a date & time</p>
+            </div>
+            <div>
+              <h2>Retrun</h2>
+              <p><img src="./assets/Group.png" alt="" />Add a date & time</p>
+            </div>
+            <div>
+              <h2>Car Brand</h2>
+              <p><img src="./assets/Vector.png" alt="" />Any</p>
+            </div>
+            <div class="btn">
+              <a href="">Search <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Faster Section -->
+    <section class="faster-section">
+      <div class="container">
+        <h2>Faster Checkout</h2>
+        <div id="checkout-slider" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="checkout-card">
+                  <div class="left-column">
+                    <img
+                      src="./assets/1024px-Upasana_Griha_-_North-western_View_-_Santiniketan_2014-06-29_5300.png"
+                      alt=""
+                      class="card-img"
+                    />
+                    <div class="price-below-img">
+                      Starting from <strong>₹ 3000</strong>
+                    </div>
+                  </div>
+                  <div class="card-info">
+                    <div class="route">
+                      Kolkata <i class="fas fa-arrow-right"></i> Bolpur
+                    </div>
+                    <div class="details">
+                      Mon, 20 Jan &nbsp; | &nbsp; 7:00 AM
+                    </div>
+                    <div class="divider"></div>
+                    <div class="bottom">
+                      <button class="book-btn">Book</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="checkout-card">
+                  <div class="left-column">
+                    <img
+                      src="./assets/640px-Siliguri_view.png"
+                      alt="Siliguri"
+                      class="card-img"
+                    />
+                    <div class="price-below-img">
+                      Starting from <strong>₹ 3000</strong>
+                    </div>
+                  </div>
+                  <div class="card-info">
+                    <div class="route">
+                      Kolkata <i class="fas fa-arrow-right"></i> Siliguri
+                    </div>
+                    <div class="details">
+                      Mon, 20 Jan &nbsp; | &nbsp; 7:00 AM
+                    </div>
+                    <div class="divider"></div>
+                    <div class="bottom">
+                      <button class="book-btn">Book</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="checkout-card">
+                  <div class="left-column">
+                    <img
+                      src="./assets/Purulia-Sightseeing-Places.png"
+                      alt=""
+                      class="card-img"
+                    />
+                    <div class="price-below-img">
+                      Starting from <strong>₹ 3000</strong>
+                    </div>
+                  </div>
+                  <div class="card-info">
+                    <div class="route">
+                      Kolkata <i class="fas fa-arrow-right"></i> Purulia
+                    </div>
+                    <div class="details">
+                      Mon, 20 Jan &nbsp; | &nbsp; 7:00 AM
+                    </div>
+                    <div class="divider"></div>
+                    <div class="bottom">
+                      <button class="book-btn">Book</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Popular Section -->
+    <section class="partner-section">
+      <div class="container">
+        <div class="hdr-top">
+          <h3 class="title3">Popular Categories</h3>
+          <p>
+            We present popular cars that are rented by customers to maximize
+            your comfort on long trips.
+          </p>
+        </div>
+        <div class="slider-container">
+          <div class="slider-track" id="logoTrack">
+            <div class="logo">
+              <img src="./assets/mahindra-logo.webp" alt="" />
+            </div>
+            <div class="logo"><img src="./assets/download.jpeg" alt="" /></div>
+            <div class="logo">
+              <img src="./assets/1601547022_94054.png" alt="" />
+            </div>
+            <div class="logo">
+              <img
+                src="./assets/png-transparent-honda-logo-car-brand-honda-city-angle-rectangle-logo-thumbnail.png"
+                alt=""
+              />
+            </div>
+            <div class="logo"><img src="./assets/24.webp" alt="" /></div>
+            <div class="logo">
+              <img src="./assets/download (1).jpeg" alt="" />
+            </div>
+            <div class="logo">
+              <img src="./assets/images (2).jpeg" alt="" />
+            </div>
+            <div class="logo">
+              <img src="./assets/download (2).jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why CHoose Us Section  -->
+    <section class="choose-section">
+      <div class="container">
+        <h2>Why Choose Us</h2>
+        <p>
+          We present popular cars that are rented by customers to maximize
+          <br />
+          your comfort on long trips
+        </p>
+        <div class="row">
+          <div class="col-6">
+            <div class="choose-cards">
+              <div class="card1">
+                <div class="call-img">
+                  <img src="./assets/Calling-Buttons.png" alt="" />
+                </div>
+                <div class="card-cont">
+                  <h3>Customer Support</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
+                  </p>
+                </div>
+              </div>
+              <div class="card1">
+                <div class="call-img">
+                  <img src="./assets/Calling-Buttons.png" alt="" />
+                </div>
+                <div class="card-cont">
+                  <h3>Best Price Guarantted</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
+                  </p>
+                </div>
+              </div>
+              <div class="card1" style="margin-bottom: 50px;">
+                <div class="call-img">
+                  <img src="./assets/Calling-Buttons.png" alt="" />
+                </div>
+                <div class="card-cont">
+                  <h3>Many Locations</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="choose-img">
+              <img src="./assets/man-getting-rental-car-keys.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Client's Review Section -->
+    <section class="review-section">
+      <div class="container">
+        <h2>Client’s Reviews</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard <br />
+          dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it
+        </p>
+        <div class="row">
+          <div class="col-6">
+            <div class="glide">
+              <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                  <li class="glide__slide">
+                    <div class="testimonial-image">
+                      <img src="./assets/Rakesh.png" alt="Client Photo" />
+                    </div>
+                    <div class="testimonial-card">
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry...
+                      </p>
+                      <div class="low">
+                        <div class="testimonial-name">Rakesh Singh</div>
+                        <div class="testimonial-rating">
+                          ★★★★★
+                          <span style="color: #888"
+                            >10 Reviews at Playstore</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="glide__slide">
+                    <div class="testimonial-image">
+                      <img src="./assets/Rakesh.png" alt="" />
+                    </div>
+                    <div class="testimonial-card">
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry...
+                      </p>
+                      <div class="low">
+                        <div class="testimonial-name">Rakesh Singh</div>
+                        <div class="testimonial-rating">
+                          ★★★★★
+                          <span style="color: #888"
+                            >10 Reviews at Playstore</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="glide__arrows" data-glide-el="controls">
+                <button
+                  class="glide__arrow glide__arrow--left"
+                  data-glide-dir="<"
+                >
+                  <i class="fa-solid fa-circle-arrow-left"></i>
+                </button>
+                <button
+                  class="glide__arrow glide__arrow--right"
+                  data-glide-dir=">"
+                >
+                  <i class="fa-solid fa-circle-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="review-cont">
+              <h3>What Our Customer’s Says About us?</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+                <br />
+                <br />
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+              </p>
+              <div class="textarea">
+                <textarea
+                  name=""
+                  id=""
+                  placeholder="Write your Assessment"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Count Section -->
+    <section class="stats" style="margin-top: 50px;">
+      <div class="container">
+        <div class="row">
+          <div class="stat">
+            <h3 id="cars">0+</h3>
+            Cars for Rent
+          </div>
+          <div class="stat">
+            <h3 id="clients">0+</h3>
+            Happy Clients
+          </div>
+          <div class="stat">
+            <h3 id="locations">0+</h3>
+            Rental Locations
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blank Section -->
+    <section class="blank-section">
+      <div class="container">
+        <div class="footer-flote">
+          <p>Questions? Get in Touch</p>
+          <div class="footer-box-section">
+            <div class="footer-form">
+              <div class="footer-box-text">
+                <input type="text" placeholder="Your Name*" />
+              </div>
+              <div class="footer-box-email">
+                <input type="email" placeholder="Your Email*" />
+              </div>
+              <div class="footer-box-textarea">
+                <textarea name="" id="" placeholder="Your  Message"></textarea>
+              </div>
+              <div class="form-btn"><a href="">Send A Message</a></div>
+            </div>
+            <div class="form-side">
+              <div class="form-side-up">
+                <div class="form-side-p">
+                  <p>Download <br />App for free</p>
+                  <div class="form-side-icon">
+                    <img src="./assets/Car point 1.png" alt="" />
+                  </div>
+                </div>
+                <p>For easier, booking & easy deals</p>
+                <div class="form-pay">
+                  <img src="./assets/black 1.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-pay1">
+            <img src="./assets/black 1.png" alt="" />
+          </div>
+          <div class="fotter-last-img">
+            <img src="./assets/all-car 1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="footer1">
+              <div class="footer-icon">
+                <img src="./assets/nav-logo.png" alt="" />
+              </div>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                <br />typesetting industry. Lorem Ipsum has been the industry's
+                <br />standard dummy text
+              </p>
+              <div class="footer-logos">
+                <div class="fotter-logo">
+                  <img src="./assets/ic_baseline-facebook.png" alt="" />
+                </div>
+                <div class="fotter-logo">
+                  <img src="./assets/mdi_instagram.png" alt="" />
+                </div>
+                <div class="fotter-logo">
+                  <img src="./assets/prime_twitter.png" alt="" />
+                </div>
+                <div class="fotter-logo">
+                  <img src="./assets/mdi_youtube.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <ul>
+              <li>
+                <b><a href="">Company</a></b>
+              </li>
+              <li><a href="">Home</a></li>
+              <li>
+                <a href="">About us</a>
+              </li>
+              <li><a href="">Booking</a></li>
+              <li><a href="">How Its Work</a></li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul>
+              <li>
+                <b><a href="">Help</a></b>
+              </li>
+              <li><a href="">Customer Support</a></li>
+              <li><a href="">Terms & Condition</a></li>
+              <li><a href="">Project</a></li>
+              <li>
+                <a href="">Careers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul>
+              <li><b>Subscribe To Newsletters</b></li>
+              <li class="footer-input">
+                <input type="email" placeholder="Enter your email" />
+              </li>
+              <li><a class="footer-btn" href="">Subscribe </a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-last">
+          <img src="./assets/mdi_copyright.png" alt="" />
+          <p>2024 CarPoint All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SplideJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+    <!-- GlideJS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/glide.min.js"></script>
+    <!-- js -->
+    <script src="/js/index.js"></script>
+  </body>
+</html>

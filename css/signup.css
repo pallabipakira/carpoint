@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1630px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+.row {
+  display: flex;
+  margin: 0 -15px;
+  flex-wrap: wrap;
+}
+.row > * {
+  padding: 0 15px;
+}
+
+/* .container-fluid {
+  min-height: 100vh;
+} */
+
+.left-panel {
+  background: url(../assets/Sign\ up1.jpg);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.left-panel img {
+  max-width: 100%;
+  height: auto;
+  padding-top: 165px;
+  margin-right: -115px;
+}
+
+.logo {
+  position: absolute;
+  top: -250px;
+  left: 22px;
+  right: 170px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.form-section {
+  padding: 50px 70px;
+}
+
+h2 {
+  padding-left: 95px;
+}
+
+.form-control {
+  font-weight: 100;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #f7b40c;
+}
+
+.btn-warning {
+  background-color: #f7b40c;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #d89e00;
+}
+@media screen and (max-width: 768px) {
+  .left-panel {
+    display: none;
+  }
+  h2 {
+    padding-left: 280px;
+  }
+  p{
+    padding-left: 150px;
+  }
+  .form-section {
+    padding: 1.5rem;
+  }
+  .btn-warning{
+    margin-left: 300px;
+  }
+  .text-center{
+    margin-left: -425px;
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  h2 {
+    padding-left: 116px;
+  }
+  p{
+    padding-left: 45px;
+  }
+  .btn-warning{
+    margin-left: 300px;
+  }
+  .text-center{
+    padding-left: 50px;
+  }
+  
+}
+@media screen and (max-width:425px) {
+  .text-center{
+    padding-left: 15px;
+    margin-left: -64px;
+  }
+}
+@media screen and (max-width: 320px) {
+   h2 {
+    padding-left: 80px;
+  }
+  .btn-warning{
+    margin-left: 95px;
+  }
+  
+}
